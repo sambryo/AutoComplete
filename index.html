@@ -4,6 +4,10 @@
     <meta charset="utf-8">
     <title>Title</title>
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <script src="lng.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
 </head>
 <body>
     <div id="container">
@@ -15,6 +19,13 @@
         <input type="text" list="degree" name="degree">
         <br> <br>
     </div>
+    <script>
+        $(document).ready(function(){
+            $('input').on('mouseover', function(){
+                var a = $(this).attr('name');
+            });
+        });
+    </script>
 
 </body>
 </html>
