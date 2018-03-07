@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <script src="lng.js" type="text/javascript"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="country.js"></script>
 
 
 </head>
@@ -15,14 +16,16 @@
         <input type="text" list="language" name="language">
         <br> <br>
         Language :<br>
-        <datalist id= "degree"></datalist>
+        <datalist id= "language"></datalist>
         <input type="text" list="degree" name="degree">
         <br> <br>
     </div>
+    <script type="text/javascript" src="script.js"></script>
     <script>
         $(document).ready(function(){
-            $('input').on('mouseover', function(){
+            $("input").on("mouseover", function(){
                 var a = $(this).attr('name');
+                jsfunc1(a);
             });
         });
     </script>
