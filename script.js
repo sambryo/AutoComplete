@@ -3,7 +3,7 @@ function jsfunc1(sourceString){
     var sourceObj = eval(sourceString); // converting string to obj
     var obj = new sourceObj();
     var options = "";
-    for (var i=0; i< obj.length; i++){
+    for (var i = 0; i< obj.list.length; i++){
         options += "<option value =" + obj.list[i] + '" />';
     }
 
